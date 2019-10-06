@@ -29,3 +29,15 @@ class App extends Components {
 ```
 // babel-plugin-transform-decorators-legacy
 ```
+5. 受修饰器的影响，修饰器只能修饰类，所以还得安装一个插件
+```
+npm i babel-plugin-transform-class-properties -S
+```
+
+### observable and observe
+1. 前者表示可被观察的，来自mobx，类中的属性
+2. 后者表示观察者，来自mobx-react，组件类
+3. 类必须要实例化，传入组件当作props
+
+### @action
+### @computed

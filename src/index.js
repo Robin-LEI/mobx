@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import appState from './appState'
+import TodoList from './models/TodoList'
 import App from './App';
 
-ReactDOM.render(<App appState={appState} />, document.getElementById('root'));
+let todolist = new TodoList()
+
+ReactDOM.render(<App todolist={todolist} />, document.getElementById('root'));
